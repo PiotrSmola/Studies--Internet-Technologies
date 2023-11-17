@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    nav > ul > li{
+    display: inline-block;
+    width: calc(25% - 3px);
+} 
+article{
+    float: left;
+    width: 20%;
+}
+section > ul > li{
+    margin-bottom: 15px;
+}
+main{
+    float: right;
+    width: 80%;
+}
+footer{
+    clear: both;
+    position: relative;
+    top: 20px;
+    > ul {
+        margin-top:200px;
+    }
+    
+    > ul > li{
+        display: inline-block;
+        width: calc(25% - 3px);
+    }
+}
+}
+
+@media screen and (max-width: 767px) {
+    nav > ul > li{
+    display: block;
+    width: 100%;
+    font-size: small;
+    
+}}
+
