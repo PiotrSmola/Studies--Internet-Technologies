@@ -1,0 +1,19 @@
+section{
+    border: black solid 1px;
+    background-color: whitesmoke;
+    height: 150px;
+    padding: 5px;
+}
+img{
+    width: 40px;
+}
+
+.second > img{
+    float: right;
+}
+.third:first-child{
+    float: left;
+}
+.last{
+    float: right;
+}
