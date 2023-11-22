@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layers</title>
+    <style>
+        @layer first, second, third;
+        @import "style6.css";
+
+
+        @layer first {
+            section {
+                color: black !important;
+            }
+        }
+
+        @layer second {
+            section {
+                color: red;
+            }
+        }
+
+        @layer third {
+            section {
+                color: blue;
+            }
+        }
+
+        section {
+            color: green;
+        }
+
+        section {
+            height: 100px;
+            transform: rotate(10deg);
+            scale: 200%;
+            filter: blur(2px);
+            color: rgba(0, 0, 255, 0.5);
+            padding: calc(1em - 5px);
+        }
+    </style>
+</head>
+
+<body>
+    <section></section>
+
+</body>
+
+</html>

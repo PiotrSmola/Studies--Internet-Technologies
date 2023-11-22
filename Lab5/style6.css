@@ -1,0 +1,11 @@
+@layer zero;
+
+@layer zero {
+    section {
+        color: brown;
+    }
+}
+
+section {
+    color: yellow;
+}
