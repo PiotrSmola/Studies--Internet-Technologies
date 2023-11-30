@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid example</title>
+    <style>
+      :root {
+        --blue-ur: #0033a0;
+        --white-ur: #fefefe;
+      }
+
+      body {
+        text-align: center;
+        color: var(--white-ur);
+        background-color: var(--blue-ur);
+      }
+
+      img {
+        background-color: var(--white-ur);
+        width: 300px;
+      }
+
+      .gallery {
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 767px) {
+        .gallery {
+          grid-template-columns: repeat(1, 400px);
+          place-items: center;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .gallery {
+          grid-template-columns: repeat(2, 400px);
+          place-items: center;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .gallery {
+          grid-template-columns: repeat(3, 400px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Gallery</h1>
+    <section id="gallery" class="gallery">
+      <img src="UR.png" alt="placeholder image" />
+      <img src="UR.png" alt="placeholder image" />
+      <img src="UR.png" alt="placeholder image" />
+      <img src="UR.png" alt="placeholder image" />
+      <img src="UR.png" alt="placeholder image" />
+    </section>
+  </body>
+</html>
