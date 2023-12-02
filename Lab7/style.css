@@ -1,0 +1,54 @@
+.logo{
+    width: 200px;
+    height: 200px;
+    animation-name: animacja;
+    background-image: url(logo_monochromatyczne.png);
+    background-size: cover;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacja {
+    50% { 
+        background-image: url(logo_monochromatyczne.png);
+    }
+    100%{
+        background-image: url(logo_barwne.png)
+    } 
+    }
+.logo:hover{
+    animation-name: scaling;
+    animation-duration: 2s;
+    animation-iteration-count: forwards;    
+}
+@keyframes scaling {
+    100% {
+    transform: scale(2);
+    }
+    
+}
+
+.logo2{
+    width: 200px;
+    height: 200px;
+    animation-name: animacja;
+    background-image: url(logo_monochromatyczne.png);
+    background-size: cover;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.logo2:hover{
+    animation-name: obrot, scaling;
+    animation-iteration-count: forwards;
+    animation-duration: 2s;
+
+}
+@keyframes obrot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
